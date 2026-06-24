@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../../components/Header/Header';
 import ScrollTop from '../../components/Scroll-top/ScrollTop';
-import Footer from '../../components/Footer/footer';
+import Footer from '../../components/Footer/Footer';
 import BookContainer from '../../components/BookContainter/BookContainer'; // Corrected the path typo
 import './Books.css';
 import axios from 'axios';

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/footer';
+import Footer from '../../components/Footer/Footer';
 import './AuthorRequest.css';
 import { API_BASE_URL } from '../../apiConfig';
 

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import './BookDoc.css';
 import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/footer';  // Ensure import path is correct
+import Footer from '../../components/Footer/Footer';  // Ensure import path is correct
 
 const BookDoc = () => {
   const { search } = useLocation();

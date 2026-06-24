@@ -5,7 +5,7 @@ import axios from 'axios';
 import { API_BASE_URL } from '../../apiConfig';
 import { useLocation } from 'react-router-dom';
 import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/footer';
+import Footer from '../../components/Footer/Footer';
 import ScrollTop from '../../components/Scroll-top/ScrollTop';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import './MultipleDelivery.css';

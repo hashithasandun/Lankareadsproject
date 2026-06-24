@@ -3,7 +3,7 @@ import axios from 'axios';
 import { API_BASE_URL } from '../../apiConfig';
 import { useNavigate } from 'react-router-dom'; // For redirection
 import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/footer";
+import Footer from "../../components/Footer/Footer";
 import './Register.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { GoogleLoginButton, FacebookLoginButton } from "react-social-login-buttons";

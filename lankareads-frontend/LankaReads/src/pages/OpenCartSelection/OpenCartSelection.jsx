@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/footer';
+import Footer from '../../components/Footer/Footer';
 import './OpenCartSelection.css';
 import ScrollTop from '../../components/Scroll-top/ScrollTop';
 import { useNavigate } from 'react-router-dom';

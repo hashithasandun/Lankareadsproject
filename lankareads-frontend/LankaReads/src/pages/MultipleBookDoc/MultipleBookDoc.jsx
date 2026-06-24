@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/footer';
+import Footer from '../../components/Footer/Footer';
 import './MultipleBookDoc.css';  // Custom style
 import ScrollTop from '../../components/Scroll-top/ScrollTop';
 

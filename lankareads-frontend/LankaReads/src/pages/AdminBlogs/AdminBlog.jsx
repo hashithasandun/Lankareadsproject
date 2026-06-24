@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import AdminHeader from '../../components/AdminHeader/AdminHeader';
 import ScrollTop from '../../components/Scroll-top/ScrollTop';
-import Footer from '../../components/Footer/footer';
+import Footer from '../../components/Footer/Footer';
 
 function AdminBlog() {
     const [title, setTitle] = useState('');

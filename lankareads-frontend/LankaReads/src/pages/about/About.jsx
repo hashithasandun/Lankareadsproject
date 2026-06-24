@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.css';
 import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/footer';
+import Footer from '../../components/Footer/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import ScrollTop from '../../components/Scroll-top/ScrollTop';

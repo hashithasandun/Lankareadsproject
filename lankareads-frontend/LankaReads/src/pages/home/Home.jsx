@@ -8,7 +8,7 @@ import Features from '../../components/Features/features';
 import Recomended from '../../components/Recomand/recomended';
 import Subscription from '../../components/Subscription/subscription';
 import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/footer';
+import Footer from '../../components/Footer/Footer';
 import ScrollTop from '../../components/Scroll-top/ScrollTop'
 import Whatsapp from '../../components/Whatsapp/Whatsapp';
 
