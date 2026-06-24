@@ -16,7 +16,7 @@ import './App.css';
 import OpenCartSelection from './pages/OpenCartSelection/OpenCartSelection';
 import MultipleDelivery from './pages/MultipleDelivery/MultipleDelivery';
 import BookDoc from './pages/BookDoc/BookDoc';
-import MultipleBookDoc from './pages/multipleBookDoc/MultipleBookDoc';
+import MultipleBookDoc from './pages/MultipleBookDoc/MultipleBookDoc';
 import AdminDashboard from './pages/AdminDashboard/AdminDashboard';
 import AdminBooks from './pages/AdminBooks/AdminBooks';
 import AdminDelivery from './pages/AdminDelivery/AdminDelivery';
