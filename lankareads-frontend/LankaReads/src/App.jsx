@@ -6,7 +6,7 @@ import Contact from './pages/contact/Contact';
 import Authors from './pages/Authors/Authors';
 import Blogs from './pages/Blogs/Blogs';
 import Register from './pages/Register/Register';
-import Payment from './pages/payment/Payment';
+import Payment from './pages/Payment/Payment';
 import OpenPage from './pages/OpenPage/OpenPage';
 import Delivery from './pages/Delivery/Delivery';
 import { CartProvider } from './contexts/CartContext';
