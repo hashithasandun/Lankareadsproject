@@ -14,7 +14,7 @@ import { ThemeProvider } from './contexts/ThemeContext';
 import { LanguageProvider } from './contexts/LanguageContext';
 import './App.css';
 import OpenCartSelection from './pages/OpenCartSelection/OpenCartSelection';
-import MultipleDelivery from './pages/multipleDelivery/MultipleDelivery';
+import MultipleDelivery from './pages/MultipleDelivery/MultipleDelivery';
 import BookDoc from './pages/BookDoc/BookDoc';
 import MultipleBookDoc from './pages/multipleBookDoc/MultipleBookDoc';
 import AdminDashboard from './pages/AdminDashboard/AdminDashboard';
