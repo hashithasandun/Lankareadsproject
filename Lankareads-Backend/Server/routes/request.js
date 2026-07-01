@@ -6,7 +6,6 @@ const {OAuth2Client} = require('google-auth-library');
 
 /* GET User Listing */
 router.post('/', async function(req, res, next) {
-    res.header('Access-Control-Allow-Origin', process.env.FRONTEND_URL || 'https://lankareadsproject-frontend.vercel.app');
     res.header('Referrer-Policy', 'no-referrer-when-downgrade');
 
     const redirectUrl = process.env.BACKEND_URL ? process.env.BACKEND_URL + '/oauth' : 'https://lankareads-backend-cyan.vercel.app/oauth';
