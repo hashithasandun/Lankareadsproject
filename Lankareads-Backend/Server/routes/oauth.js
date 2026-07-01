@@ -17,10 +17,10 @@ async function getUserData(access_token) {
 router.get('/', async function (req, res, next) {
     const code = req.query.code;
     try {
-        const redirectUrl = 'http://127.0.0.1:5000/oauth';
+        const redirectUrl = process.env.BACKEND_URL ? process.env.BACKEND_URL + '/oauth' : 'https://lankareads-backend-cyan.vercel.app/oauth';
         const oAuth2Client = new OAuth2Client(
-            process.env.CLIENT_ID,
-            process.env.CLIENT_SECRET,
+            process.env.GOOGLE_CLIENT_ID,
+            process.env.GOOGLE_CLIENT_SECRET,
             redirectUrl
         );
         const tokenResponse = await oAuth2Client.getToken(code);
@@ -62,7 +62,7 @@ router.get('/', async function (req, res, next) {
         const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, { expiresIn: '1h' });
 
         // Send the token and user info to the frontend (for example)
-        res.redirect(`http://localhost:5173/home?token=${token}&userId=${user._id}&name=${user.name}&email=${user.email}`);
+        res.redirect(`${process.env.FRONTEND_URL || 'https://lankareadsproject-frontend.vercel.app'}/home?token=${token}&userId=${user._id}&name=${user.name}&email=${user.email}`);
     } catch (err) {
         console.error('Error during Google authentication:', err);
         res.status(500).send('Authentication failed');

@@ -32,8 +32,8 @@ app.post('/create-checkout-session', async (req, res) => {
                 quantity: 1,
             }],
             mode: 'payment',
-            success_url: 'http://localhost:5173/',
-            cancel_url: 'http://localhost:5173/',
+            success_url: process.env.FRONTEND_URL || 'https://lankareadsproject-frontend.vercel.app/',
+            cancel_url: process.env.FRONTEND_URL || 'https://lankareadsproject-frontend.vercel.app/',
         });
 
         res.json({ id: session.id, url: session.url });

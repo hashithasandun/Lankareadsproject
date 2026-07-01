@@ -6,14 +6,14 @@ const {OAuth2Client} = require('google-auth-library');
 
 /* GET User Listing */
 router.post('/', async function(req, res, next) {
-    res.header('Access-Control-Allow-Origin', 'http://localhost:5173');
+    res.header('Access-Control-Allow-Origin', process.env.FRONTEND_URL || 'https://lankareadsproject-frontend.vercel.app');
     res.header('Referrer-Policy', 'no-referrer-when-downgrade');
 
-    const redirectUrl = 'http://127.0.0.1:5000/oauth';
+    const redirectUrl = process.env.BACKEND_URL ? process.env.BACKEND_URL + '/oauth' : 'https://lankareads-backend-cyan.vercel.app/oauth';
 
     const oAuth2Client = new OAuth2Client (
-        process.env.CLIENT_ID,
-        process.env.CLIENT_SECRET,
+        process.env.GOOGLE_CLIENT_ID,
+        process.env.GOOGLE_CLIENT_SECRET,
         redirectUrl
     );
 
